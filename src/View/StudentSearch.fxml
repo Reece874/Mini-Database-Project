@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="689.0" prefWidth="1007.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.StudentSearchController">
+   <children>
+      <Label fx:id="LblAllStudents" layoutX="55.0" layoutY="137.0" prefHeight="17.0" prefWidth="124.0" text="Students:" />
+      <Label fx:id="LblSearch" layoutX="31.0" layoutY="46.0" prefHeight="17.0" prefWidth="49.0" text="Search:" />
+      <TextField fx:id="TxtFirstName" layoutX="150.0" layoutY="29.0" promptText="First Name" />
+      <TextField fx:id="TxtLastName" layoutX="312.0" layoutY="29.0" promptText="Last Name" />
+      <TextField fx:id="TxtUsername" layoutX="468.0" layoutY="29.0" promptText="Username" />
+      <TableView fx:id="TblSearchRes" layoutX="22.0" layoutY="107.0" prefHeight="500.0" prefWidth="952.0">
+         <columns>
+            <TableColumn fx:id="ColStudentID" prefWidth="28.0" text="ID" />
+            <TableColumn fx:id="ColFirstName" prefWidth="118.5" text="FirstName" />
+            <TableColumn fx:id="ColLastName" prefWidth="108.0" text="LastName" />
+            <TableColumn fx:id="ColUsername" prefWidth="126.0" text="Username" />
+            <TableColumn fx:id="ColPassword" prefWidth="164.0" text="Password" />
+            <TableColumn fx:id="ColAddress" prefWidth="406.5" text="Address" />
+         </columns>
+      </TableView>
+      <Button fx:id="BtnSearch" layoutX="628.0" layoutY="42.0" mnemonicParsing="false" onAction="#OnSearch" prefHeight="25.0" prefWidth="80.0" text="Search" />
+      <Button fx:id="BtnAddStudent" layoutX="628.0" layoutY="635.0" mnemonicParsing="false" onAction="#OnBtnAddStudent" prefHeight="25.0" prefWidth="103.0" text="Add Student" />
+      <Button fx:id="BtnRemoveStudent" layoutX="748.0" layoutY="635.0" mnemonicParsing="false" onAction="#OnBtnRemove" prefHeight="25.0" prefWidth="111.0" text="Remove Student" />
+      <Button fx:id="BtnEditStudent" layoutX="874.0" layoutY="635.0" mnemonicParsing="false" onAction="#OnBtnEditStudent" prefHeight="25.0" prefWidth="103.0" text="Edit Student" />
+      <TextField fx:id="TxtID" layoutX="80.0" layoutY="29.0" prefHeight="25.0" prefWidth="59.0" promptText="ID" />
+      <TextField fx:id="TxtStreetNum" layoutX="80.0" layoutY="63.0" prefHeight="25.0" prefWidth="80.0" promptText="Street Num" />
+      <TextField fx:id="TxtStreetName" layoutX="171.0" layoutY="63.0" promptText="Street Name" />
+      <TextField fx:id="TxtCity" layoutX="330.0" layoutY="63.0" prefHeight="25.0" prefWidth="124.0" promptText="City" />
+      <TextField fx:id="TxtState" layoutX="461.0" layoutY="63.0" prefHeight="25.0" prefWidth="80.0" promptText="State" />
+      <TextField fx:id="TxtZip" layoutX="554.0" layoutY="63.0" prefHeight="25.0" prefWidth="59.0" promptText="Zip" />
+   </children>
+</AnchorPane>
